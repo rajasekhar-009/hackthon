@@ -1,21 +1,22 @@
-const employees = [
-    { name: "narasimha(kasai)", position: "Software Engineer", department: "Development" },
-    { name: "pavan", position: "Project Manager", department: "Management" },
-    { name: "rajasekhar", position: "UI/UX Designer", department: "Design" },
-    { name: "raju", position: "Quality Analyst", department: "Quality Assurance" },
-    { name: "purushotham", position: "Data Scientist", department: "Data Analysis" }
+const students = [
+    { name: "Arjun Reddy", age: 20, college: "NIT Warangal", course: "Computer Science" },
+    { name: "Priya Singh", age: 22, college: "IIT Madras", course: "Electrical Engineering" },
+    { name: "Rahul Sharma", age: 21, college: "BITS Pilani", course: "Mechanical Engineering" },
+    { name: "Sneha Rao", age: 23, college: "Anna University", course: "Civil Engineering" },
+    { name: "Aakash Patel", age: 24, college: "Delhi University", course: "Commerce" }
 ];
 
 window.onload = function() {
-    const container = document.getElementById('employee-container');
-    employees.forEach(employee => {
-        const employeeDiv = document.createElement('div');
-        employeeDiv.className = 'employee';
-        employeeDiv.innerHTML = `
-            <h2>${employee.name}</h2>
-            <p>Position: ${employee.position}</p>
-            <p>Department: ${employee.department}</p>
+    const container = document.getElementById('student-container');
+    students.forEach(student => {
+        const studentDiv = document.createElement('div');
+        studentDiv.className = 'student';
+        studentDiv.innerHTML = `
+            <h2>${student.name}</h2>
+            <p>Age: ${student.age}</p>
+            <p>College: ${student.college}</p>
+            <p>Course: ${student.course}</p>
         `;
-        container.appendChild(employeeDiv);
+        container.appendChild(studentDiv);
     });
 }

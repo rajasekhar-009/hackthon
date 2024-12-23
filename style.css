@@ -1,43 +1,43 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: green#f2f2f2;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: bottom;
+    align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-h2 {
-    color:greenyellow;
+h1 {
+    color: #333;
 }
 
-#employee-container {
+#student-container {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
-    background-color: green;
+    background-color: black;
     padding: 20px;
-    box-shadow: 0 0 10px green(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.employee {
-    border-bottom: 1px solid green#ddd;
+.student {
+    border-bottom: 1px solid #ddd;
     padding: 10px 0;
 }
 
-.employee:last-child {
+.student:last-child {
     border-bottom: none;
 }
 
-.employee h2 {
+.student h2 {
     margin: 0;
     font-size: 1.2em;
     color: #007BFF;
 }
 
-.employee p {
+.student p {
     margin: 5px 0;
 }
